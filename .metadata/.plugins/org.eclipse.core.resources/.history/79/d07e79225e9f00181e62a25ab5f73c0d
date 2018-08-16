@@ -1,0 +1,5 @@
+package com.learn.factory;
+
+public class SingleFactory {
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.gaoliang.learn&apos; to &apos;com.gaoliang.file&apos;&#x0D;&#x0A;- Original project: &apos;FileBaseOperator&apos;&#x0D;&#x0A;- Original element: &apos;FileBaseOperator/src/com.gaoliang.learn&apos;&#x0D;&#x0A;- Renamed element: &apos;FileBaseOperator/src/com.gaoliang.file&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.gaoliang.learn&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.gaoliang.learn" name="com.gaoliang.file" qualified="false" references="true" stamp="1506221941259" textual="false" version="1.0"/>
+</session>

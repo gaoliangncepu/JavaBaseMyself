@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="sun.applet.Main"/>
+<fullyQualifiedTypeName name="com.learn.GaoL.ThreadTest.MusivThread"/>
+<fullyQualifiedTypeName name="com.learn.GaoL.ThreadTest"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="com.learn.inheritance.Bird"/>
+<fullyQualifiedTypeName name="com.learn.inheritance.Animal"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="com.learn.others.pro.PropertiesDemo03"/>
+<fullyQualifiedTypeName name="com.sun.glass.ui.TouchInputSupport"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="com.learn.singleton.HungarySingleton"/>
+<fullyQualifiedTypeName name="com.learn.singleton.LazySingleton"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.NEW"/>
+<fullyQualifiedTypeName name="sun.nio.cs.SingleByte"/>
+<fullyQualifiedTypeName name="com.learn.singleton.StaticInnerClassSingleton"/>
+<fullyQualifiedTypeName name="com.learn.singleton.StaticInnerClassSingleton.StaticInnerClass"/>
+</qualifiedTypeNameHistroy>

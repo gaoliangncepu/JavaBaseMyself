@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<sys-config>  
+    <jdbc-info>  
+        <driver-class-name>oracle.jdbc.driver.OracleDriver</driver-class-name>  
+        <url>jdbc:oracle:thin:@localhost:1521:database</url>  
+        <user-name>why</user-name>  
+        <password>why</password>  
+    </jdbc-info>  
+    <provinces-info>  
+        <province id="hlj" name="黑龙江">  
+            <city id="harb">哈尔滨</city>  
+            <city id="nj">嫩江</city>  
+        </province>  
+        <province id="jl" name="吉林"></province>  
+    </provinces-info>  
+</sys-config> 

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.learn.GaoL&apos; to &apos;com.learn.inheritance&apos;&#x0D;&#x0A;- Original project: &apos;OOP&apos;&#x0D;&#x0A;- Original element: &apos;OOP/src/com.learn.GaoL&apos;&#x0D;&#x0A;- Renamed element: &apos;OOP/src/com.learn.inheritance&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.learn.GaoL&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.learn.GaoL" name="com.learn.inheritance" qualified="false" references="true" stamp="1515582207839" textual="false" version="1.0"/>
+</session>
