@@ -1,9 +1,0 @@
-package com.learn.singleton;
-
-public enum EnumSingleton {
-	INSTANCE;
-	
-	private static void otherOperation() {
-		// 此处可以添加进行其他相关操作或处理的代码
-	}
-}

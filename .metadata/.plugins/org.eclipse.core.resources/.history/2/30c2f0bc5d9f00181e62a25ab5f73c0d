@@ -1,5 +1,0 @@
-package com.learn.singleton;
-
-public class EnumSingleton {
-
-}
