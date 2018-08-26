@@ -8,14 +8,14 @@ package com.learn.adapter;
  */
 public class Adapter2 implements Target {
 
-	Adaptee adaptee;
+	private Adaptee adaptee;
+	
+	public Adapter2(Adaptee adaptee) {
+		this.adaptee = adaptee;
+	}
 	
 	@Override
 	public void active() {
 		adaptee.businessMethod();;
-	}
-
-	public Adapter2(Adaptee adaptee) {
-		this.adaptee = adaptee;
 	}
 }
