@@ -1,4 +1,4 @@
-package com.learn.chainOfRep;
+package com.learn.chainOfResp;
 
 /**
  * 经理

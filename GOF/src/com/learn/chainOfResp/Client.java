@@ -1,4 +1,4 @@
-package com.learn.chainOfRep;
+package com.learn.chainOfResp;
 
 public class Client {
 	public static void main(String[] args) {
