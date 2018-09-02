@@ -8,8 +8,8 @@ public class Client {
 		
 		Context context1 = new Context(strategy1);
 		context1.pringPrice(100);
-		
-		Context context2 = new Context(strategy2);
-		context2.pringPrice(100);
+		// 切换策略
+		context1.setStrategy(strategy2);
+		context1.pringPrice(100);
 	}
 }
