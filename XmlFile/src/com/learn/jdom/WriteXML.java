@@ -1,4 +1,4 @@
-package com.gaoliang.jdom;
+package com.learn.jdom;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

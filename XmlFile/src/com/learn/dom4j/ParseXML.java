@@ -1,4 +1,4 @@
-package com.gaoliang.dom4j;
+package com.learn.dom4j;
 
 import java.io.InputStream;
 import java.util.Iterator;
@@ -19,11 +19,12 @@ public class ParseXML {
      */ 
     public static Document parse2Document(String xmlFilePath) {
     	// JDom中是SAXBuilder，调用builder()方法
+    	// 用来载入xml文件的
         SAXReader reader = new SAXReader(); 
         Document document = null; 
         
         try {
-//        	InputStream in = Dom4jDemo.class.getClassLoader().getResourceAsStream(xmlFilePath);
+//        	InputStream in = ParseXML.class.getClassLoader().getResourceAsStream(xmlFilePath);
             InputStream in = ParseXML.class.getResourceAsStream(xmlFilePath); 
             document = reader.read(in); 
         } catch (DocumentException e) { 
@@ -39,8 +40,10 @@ public class ParseXML {
         SAXReader reader = new SAXReader();
         //将xml文档转换为Document的对象 
         Document document = parse2Document(xmlFilePath);
+        
         //获取文档的根元素 
         Element root = document.getRootElement(); 
+        
         //定义个保存输出xml数据的缓冲字符串对象 
         StringBuffer sb = new StringBuffer(); 
         sb.append("通过Dom4j解析XML,并输出数据:\n"); 

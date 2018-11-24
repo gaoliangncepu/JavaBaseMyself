@@ -1,4 +1,4 @@
-package com.gaoliang.jdom;
+package com.learn.jdom;
 
 import java.io.IOException;
 import java.util.Iterator;

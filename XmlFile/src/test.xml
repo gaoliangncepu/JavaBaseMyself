@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sys-config><provinces-info><province id="hlj" name="黑龙江省"><city id="harb">哈尔滨</city><city id="nj">嫩江</city></province></provinces-info></sys-config>
+<sys-config>
+	<provinces-info>
+		<province id="hlj" name="黑龙江省">
+			<city id="harb">哈尔滨</city>
+			<city id="nj">嫩江</city>
+		</province>
+	</provinces-info>
+</sys-config>

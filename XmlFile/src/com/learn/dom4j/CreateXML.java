@@ -1,4 +1,4 @@
-package com.gaoliang.dom4j;
+package com.learn.dom4j;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -15,14 +15,18 @@ public class CreateXML {
 	public static void main(String[] args) {
 		//创建了一个xml文档 
 		Document doc=DocumentHelper.createDocument(); 
+		
 		//添加注释
 		doc.addComment("这里是注释");
+		
 		//创建了一个名为students节点，因为是第一个创建，所以是根节点,再通过doc创建一个则会报错。 
 		Element root=doc.addElement("students"); 
 		//在root节点下创建一个名为student的节点
 		Element stuEle=root.addElement("student"); 
+		
 		//给student节点添加属性 
 		stuEle.addAttribute("id", "1000"); 
+		
 		//给student节点添加一个子节点 
 		Element nameEle=stuEle.addElement("name"); 
 		//设置子节点的文本 
