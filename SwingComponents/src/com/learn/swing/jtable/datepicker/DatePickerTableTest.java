@@ -11,7 +11,7 @@ import javax.swing.JTable;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 
-import com.learn.swing.jtable.TableValues;
+import com.learn.swing.jtable.abstracttablemodel.TableValues;
 import com.learn.swing.jtable.cellrenderer.GenderRenderer;
 
 /**
