@@ -1,7 +1,5 @@
 package com.learn.swing.jtable.celleditor;
 
-import java.awt.BorderLayout;
-import java.awt.Container;
 import java.text.SimpleDateFormat;
 
 import javax.swing.JFrame;
@@ -10,7 +8,7 @@ import javax.swing.JTable;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 
-import com.learn.swing.jtable.TableValues;
+import com.learn.swing.jtable.abstracttablemodel.TableValues;
 import com.learn.swing.jtable.cellrenderer.GenderRenderer;
 import com.learn.swing.jtable.datepicker.TableDatePicker;
 
@@ -32,18 +30,13 @@ import com.learn.swing.jtable.datepicker.TableDatePicker;
  */
 @SuppressWarnings("serial")
 public class EditorTableTest extends JFrame{
-	protected JTable table;
     
     public EditorTableTest(){
-          Container pane = getContentPane();
-          setTitle("FromCannel_2020's blog(CSDN)");
-          pane.setLayout(new BorderLayout());
+          setTitle("TableCellEditor");
           
           //添加表格数据
           TableValues tv =  new TableValues();
-          table= new JTable(tv);
-          
-          //设置行宽
+          JTable table= new JTable(tv);
           table.setRowHeight(30);
         
           TableColumnModel columnModel = table.getColumnModel();
@@ -56,12 +49,12 @@ public class EditorTableTest extends JFrame{
           genderColumn.setCellRenderer(new GenderRenderer());
           //设置“性别”列的单元格编辑器（editor）
           genderColumn.setCellEditor(new GenderEditor()); 
-          //设置“生日”列的单元格编辑器
+          //设置“生日”列的单元格编辑器（日期格式在初始化时起作用）
           birthColumn.setCellEditor(new TableDatePicker(new SimpleDateFormat("yyyy-MM-dd")));
         
           //必须把table放入JScrollPane才会有列名出现
           JScrollPane jsp = new JScrollPane(table);
-          pane.add(jsp, BorderLayout.CENTER);
+          getContentPane().add(jsp);
     }
     public static void main(String[] args) {
               EditorTableTest stt = new EditorTableTest();

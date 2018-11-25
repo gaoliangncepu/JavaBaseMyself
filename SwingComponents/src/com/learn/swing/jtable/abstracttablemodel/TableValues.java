@@ -1,4 +1,4 @@
-package com.learn.swing.jtable;
+package com.learn.swing.jtable.abstracttablemodel;
 
 import javax.swing.table.AbstractTableModel;
 
