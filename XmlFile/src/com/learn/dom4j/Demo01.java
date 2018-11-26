@@ -9,10 +9,11 @@ import org.junit.Test;
 public class Demo01 {
 
 	@Test
-	public static void readXml() throws DocumentException {
+	public void readXml() throws DocumentException {
 		SAXReader reader = new SAXReader();
 
 		org.dom4j.Document document = reader.read(new File("src/beans.xml"));
+		System.out.println(document);
 	}
 
 	/*
