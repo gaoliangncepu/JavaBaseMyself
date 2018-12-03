@@ -3,7 +3,6 @@ package com.learn.swing.jtable.datepicker;
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
@@ -12,6 +11,7 @@ import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 
 import com.learn.swing.jtable.abstracttablemodel.TableValues;
+import com.learn.swing.jtable.celleditor.GenderEditor;
 import com.learn.swing.jtable.cellrenderer.GenderRenderer;
 
 /**
@@ -41,12 +41,14 @@ public class DatePickerTableTest extends JFrame{
           table.setRowHeight(30);
         
           TableColumnModel tcm = table.getColumnModel();
-          TableColumn tc = tcm.getColumn(TableValues.getGender());
+          TableColumn genderColumn = tcm.getColumn(TableValues.getGender());
+          TableColumn birthColumn = tcm.getColumn(TableValues.getBirth());
           
           //设置“性别”列的单元格渲染器（renderer）
-          tc.setCellRenderer(new GenderRenderer());
+          genderColumn.setCellRenderer(new GenderRenderer());
+          genderColumn.setCellEditor(new GenderEditor());
           //设置“性别”列的单元格编辑器（editor）
-          tc.setCellEditor(new TableDatePicker(new SimpleDateFormat("yyyy年-MM月-dd日"))); 
+          birthColumn.setCellEditor(new TableDatePicker(new SimpleDateFormat("yyyy年-MM月-dd日"))); 
         
           //必须把table放入JScrollPane才会有列名出现
           JScrollPane jsp = new JScrollPane(table);

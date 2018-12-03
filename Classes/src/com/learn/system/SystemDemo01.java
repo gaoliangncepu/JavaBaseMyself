@@ -18,6 +18,7 @@ public class SystemDemo01 {
 
 	/**
 	 * 用Junit测试的方法，访问权限必须为 public，否则报initializationError
+	 * hamcrest-core-1.3.jar + junit4.1*.jar是JDK1.8下的有效组合
 	 */
 	@Test
 	public void testJunit() {
@@ -124,9 +125,10 @@ public class SystemDemo01 {
 				new User(3, "kitty", "kitty@qq,com") };
 		// 新建一个目标对象数组
 		User[] target = new User[users.length];
-		// 实现复制
+		// 实现"浅"复制
 		System.arraycopy(users, 0, target, 0, users.length);
-
+		// 浅复制：仅仅复制所考虑的对象，而不复制它所引用的对象。
+		// 深复制：深复制把要复制的对象所引用的对象都复制了一遍。
 		System.out.println("源对象与目标对象的物理地址是否一样：" + (users[0] == target[0] ? "浅复制" : "深复制"));
 		target[0].setEmail("admin@sina.com");
 		System.out.println("修改目标对象的属性值后源对象users：");
